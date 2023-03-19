@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.myHeading{
+    font-size: 48px;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 1px #00fff0;
+    background-image:  url(./Assets/back.png);
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 10s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+.mainScreen {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #336074;
+}
+
+.mainBox {
+    background-color: #444444;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #3b3b3b;
+    padding: 20px;
+}
+
+.mainBox form input {
+    border: 0px;
+    outline: 0px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    box-shadow: -6px -6px 10px rgba(0, 280, 240, 0.4), 6px 6px 10px rgba(0, 280, 240, 0.4) ;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 36px;
+    padding: 5px 5px;
+    box-shadow: inset 0px 0px 10px 1px #00fff0 !important;
+    border-radius: 10px;
+}
+
+form input.equalsTo {
+    width: 145px;
+}
+
+.red {
+    color: #fbff00 !important;
+}
